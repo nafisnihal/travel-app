@@ -23,7 +23,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>
-          <Toaster position="top-right" />
+          <Toaster position="bottom-right" />
         </AuthProvider>
       </BrowserRouter>
     </ThemeProvider>
