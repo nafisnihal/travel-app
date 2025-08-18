@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="p-2 flex justify-between items-center max-w-7xl mx-auto w-full">
+    <header className="py-2 flex justify-between items-center max-w-7xl mx-auto w-full">
       <Link to="/" className="text-2xl font-bold -mt-2">
         <h1>Travello</h1>
       </Link>

@@ -13,18 +13,16 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { cities } from "@/lib/cities";
+import { destinations } from "@/lib/destinations";
 import { cn } from "@/lib/utils";
 import { Check, Search } from "lucide-react";
 import { useState } from "react";
 
-function SearchBox() {
-  const [selectedCities, setSelectedCities] = useState("");
-  console.log("🚀 ~ SearchBox ~ selectedCities:", selectedCities);
+function SearchBox({ selectedDstn, setSelectedDst }) {
   const [open, setOpen] = useState(false);
 
   const handleSelect = (value) => {
-    setSelectedCities(value);
+    setSelectedDst(value);
     setOpen(false);
   };
 
@@ -36,9 +34,9 @@ function SearchBox() {
             variant="outline"
             role="combobox"
             aria-expanded={open}
-            className="w-full justify-between capitalize"
+            className="w-full justify-between hover:text-white capitalize bg-transparent hover:bg-transparent focus:ring-0 focus:outline-none"
           >
-            {selectedCities ? selectedCities : "Search Destinations"}
+            {selectedDstn ? selectedDstn : "Search Destinations Here"}
             <Search className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
@@ -54,7 +52,7 @@ function SearchBox() {
               <CommandEmpty>No destinations found.</CommandEmpty>
               <ScrollArea className="h-[200px]">
                 <CommandGroup>
-                  {cities.map((city) => (
+                  {destinations.map((city) => (
                     <CommandItem
                       key={city.value}
                       value={city.value}
@@ -64,12 +62,12 @@ function SearchBox() {
                         <Check
                           className={cn(
                             "h-4 w-4",
-                            selectedCities.includes(city.value)
+                            selectedDstn.includes(city.value)
                               ? "opacity-100"
                               : "opacity-0"
                           )}
                         />
-                        <span>{city.label}</span>
+                        <span className="font-medium">{city.label}</span>
                       </div>
                     </CommandItem>
                   ))}
