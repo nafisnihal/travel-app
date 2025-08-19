@@ -16,6 +16,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { destinations } from "@/lib/destinations";
 import { cn } from "@/lib/utils";
 import { Check, Search } from "lucide-react";
+import { motion as m } from "motion/react";
 import { useState } from "react";
 
 function SearchBox({ selectedDstn, setSelectedDst, submitted }) {
@@ -38,7 +39,16 @@ function SearchBox({ selectedDstn, setSelectedDst, submitted }) {
             disabled={submitted}
           >
             {selectedDstn ? selectedDstn : "Search Destinations Here"}
-            <Search className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            <m.div
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <Search className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            </m.div>
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-full p-0 bg-transparent border-none">

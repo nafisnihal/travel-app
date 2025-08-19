@@ -227,9 +227,11 @@ const BookingForm = memo(({ selectedDstn, submitted, setSubmitted }) => {
   if (!selectedDstn) return null;
 
   return (
-    <div className={`${
+    <div
+      className={`${
         submitted ? "bg-transparent" : "bg-black/10 backdrop-blur-md"
-    } w-full md:w-[800px] mt-4 p-4 rounded-lg`}>
+      } w-full md:w-[800px] mt-4 p-4 rounded-lg`}
+    >
       {submitted ? (
         <m.div
           initial={{ y: 60, opacity: 0, scale: 0.9 }}
@@ -243,7 +245,17 @@ const BookingForm = memo(({ selectedDstn, submitted, setSubmitted }) => {
           </p>
           <Link to="/">
             <Button className="rounded-xl text-xs bg-white text-black dark:bg-black dark:text-white hover:bg-white dark:hover:bg-black">
-              Explore you destination here <ArrowRight />
+              Explore you destination here
+              <m.div
+                animate={{ x: [0, 3, 0] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                <ArrowRight />
+              </m.div>
             </Button>
           </Link>
         </m.div>

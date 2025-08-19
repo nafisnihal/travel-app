@@ -1,6 +1,6 @@
 import herobg from "@/assets/images/hero-bg.webp";
 import BookingForm from "@/components/home/BookingForm";
-import SearchBox from "@/components/home/searchBox";
+import SearchBox from "@/components/home/SearchBox";
 import { motion as m } from "motion/react";
 import { useEffect, useState } from "react";
 
