@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 import { Check, Search } from "lucide-react";
 import { useState } from "react";
 
-function SearchBox({ selectedDstn, setSelectedDst }) {
+function SearchBox({ selectedDstn, setSelectedDst, submitted }) {
   const [open, setOpen] = useState(false);
 
   const handleSelect = (value) => {
@@ -35,6 +35,7 @@ function SearchBox({ selectedDstn, setSelectedDst }) {
             role="combobox"
             aria-expanded={open}
             className="w-full justify-between hover:text-white capitalize bg-transparent hover:bg-transparent focus:ring-0 focus:outline-none"
+            disabled={submitted}
           >
             {selectedDstn ? selectedDstn : "Search Destinations Here"}
             <Search className="ml-2 h-4 w-4 shrink-0 opacity-50" />
