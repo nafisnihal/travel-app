@@ -12,8 +12,6 @@ import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router";
 import { useAuth } from "../context/AuthContext";
 
-const FAVORITES_STORAGE_KEY = "travel-app-favorites";
-
 const Header = () => {
   const { isAuthenticated, user, logout } = useAuth();
   const navigate = useNavigate();
@@ -61,7 +59,10 @@ const Header = () => {
           </DropdownMenu>
         ) : (
           <div className="flex">
-            <Button variant="outline" className="pl-2 pr-3 rounded-3xl">
+            <Button
+              variant="outline"
+              className="pl-2 pr-3 rounded-3xl hidden sm:flex"
+            >
               <Link
                 to="/login"
                 className="flex items-center justify-center gap-2 text-xs"
