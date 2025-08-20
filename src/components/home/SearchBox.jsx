@@ -13,7 +13,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { destinations } from "@/lib/destinations";
+import { destinations } from "@/data/destinations";
 import { cn } from "@/lib/utils";
 import { Check, Search } from "lucide-react";
 import { motion as m } from "motion/react";

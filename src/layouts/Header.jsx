@@ -73,6 +73,15 @@ const Header = () => {
                 Sign In
               </Link>
             </Button>
+
+            <Link
+              to="/login"
+              className="flex items-center justify-center gap-2 text-xs sm:hidden"
+            >
+              <Avatar className="flex items-center justify-center border rounded-full">
+                <UserRound className="w-4 h-4" />
+              </Avatar>
+            </Link>
           </div>
         )}
       </div>

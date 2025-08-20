@@ -1,22 +1,22 @@
+import VideoCard from "@/components/destination/VideoCard";
 import { Button } from "@/components/ui/button";
-import { destinations } from "@/lib/destinations";
+import { destinations } from "@/data/destinations";
 import { ArrowLeft, Calendar, Heart, MapPin, Users } from "lucide-react";
 import { motion as m } from "motion/react";
 import { useCallback, useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { Link, useNavigate, useParams } from "react-router";
+import { Link, useParams } from "react-router";
 
 const FAVORITES_STORAGE_KEY = "travel-app-favorites";
 
 const Destination = () => {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const [isFavorite, setIsFavorite] = useState(false);
 
-  // Find the destination by matching the slug with the value field
+  // Find the destination by matching the slug
   const destination = destinations.find((dest) => dest.value === slug);
 
-  // Load favorites from localStorage
+  // Load favorites
   const getFavorites = useCallback(() => {
     try {
       const favorites = localStorage.getItem(FAVORITES_STORAGE_KEY);
@@ -27,7 +27,7 @@ const Destination = () => {
     }
   }, []);
 
-  // Save favorites to localStorage
+  // Save favorites
   const saveFavorites = useCallback((favorites) => {
     try {
       localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favorites));
@@ -36,7 +36,7 @@ const Destination = () => {
     }
   }, []);
 
-  // Check if current destination is in favorites when component mounts
+  // Check destination is in favorites
   useEffect(() => {
     if (destination) {
       const favorites = getFavorites();
@@ -47,7 +47,7 @@ const Destination = () => {
     }
   }, [destination, getFavorites]);
 
-  // Toggle favorite status
+  // Toggle favorite
   const toggleFavorite = useCallback(() => {
     if (!destination) return;
 
@@ -84,7 +84,6 @@ const Destination = () => {
     toast.success(toastMessage);
   }, [destination, getFavorites, saveFavorites]);
 
-  // If destination not found, show 404
   if (!destination) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -106,18 +105,17 @@ const Destination = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="flex items-center justify-between pb-4">
-        <Button
-          variant="outline"
-          onClick={() => navigate(-1)}
-          className="bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back
-        </Button>
+      <div className="relative md:h-[400px] py-10 px-4">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-lg"
+          style={{
+            backgroundImage: `url(${destination.image})`,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
         <Button
           variant="ghost"
-          className="p-0 hover:bg-transparent"
+          className="p-2 absolute top-2 right-2 z-10 hover:bg-transparent"
           onClick={toggleFavorite}
         >
           <Heart
@@ -128,16 +126,6 @@ const Destination = () => {
             }`}
           />
         </Button>
-      </div>
-
-      <div className="relative md:h-[400px] py-10 px-4">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-lg"
-          style={{
-            backgroundImage: `url(${destination.image})`,
-          }}
-        />
-        <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 flex items-center justify-center h-full">
           <m.div
             initial={{ y: 60, opacity: 0 }}
@@ -199,10 +187,10 @@ const Destination = () => {
                 </Link>
               </div>
               <div className="relative order-1 md:order-2">
-                <img
-                  src={destination.image}
-                  alt={destination.label}
-                  className="rounded-lg shadow-xl w-full h-80 object-cover"
+                <VideoCard
+                  thumbnailSrc={destination?.image}
+                  thumbnailAlt={destination.label}
+                  videoSrc={destination?.videoSrc}
                 />
               </div>
             </div>

@@ -2,6 +2,7 @@ import herobg from "@/assets/images/hero-bg.webp";
 import BookingForm from "@/components/home/BookingForm";
 import GlobeSection from "@/components/home/GlobeSection";
 import SearchBox from "@/components/home/SearchBox";
+import TrendingDestinations from "@/components/home/TrendingDestinations";
 import { motion as m } from "motion/react";
 import { useEffect, useState } from "react";
 
@@ -38,12 +39,6 @@ const Home = () => {
           backgroundSize: "cover",
           minHeight: selectedDstn ? "auto" : "400px",
         }}
-        initial={{ y: 60, opacity: 0 }}
-        animate={{
-          y: 0,
-          opacity: 1,
-        }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <m.div
           className="flex flex-col items-center gap-4"
@@ -89,6 +84,7 @@ const Home = () => {
           />
         )}
       </m.div>
+      <TrendingDestinations />
       <GlobeSection />
     </div>
   );

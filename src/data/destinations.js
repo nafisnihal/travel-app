@@ -4,7 +4,8 @@ export const destinations = [
     value: "paris",
     label: "Paris",
     image:
-      "https://images.unsplash.com/photo-1502602898536-47ad22581b52?w=800&q=80",
+      "https://images.unsplash.com/photo-1633982341410-a6dbc348f9d5?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const destinations = [
     label: "Bali",
     image:
       "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const destinations = [
     label: "Maldives",
     image:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const destinations = [
     label: "Santorini",
     image:
       "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const destinations = [
     label: "Kyoto",
     image:
       "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export const destinations = [
     label: "Rome",
     image:
       "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ export const destinations = [
     label: "Venice",
     image:
       "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ export const destinations = [
     label: "Cape Town",
     image:
       "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ export const destinations = [
     label: "Queenstown",
     image:
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 10,
@@ -68,13 +77,15 @@ export const destinations = [
     label: "Machu Picchu",
     image:
       "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 11,
     value: "barcelona",
     label: "Barcelona",
     image:
-      "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
+      "https://images.unsplash.com/photo-1578912996078-305d92249aa6?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 12,
@@ -82,6 +93,7 @@ export const destinations = [
     label: "Dubai",
     image:
       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 13,
@@ -89,6 +101,7 @@ export const destinations = [
     label: "New York",
     image:
       "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 14,
@@ -96,6 +109,7 @@ export const destinations = [
     label: "Tokyo",
     image:
       "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 15,
@@ -103,6 +117,7 @@ export const destinations = [
     label: "Sydney",
     image:
       "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 16,
@@ -110,6 +125,7 @@ export const destinations = [
     label: "Amsterdam",
     image:
       "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 17,
@@ -117,13 +133,15 @@ export const destinations = [
     label: "Prague",
     image:
       "https://images.unsplash.com/photo-1541849546-216549ae216d?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 19,
     value: "banff",
     label: "Banff",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+      "https://images.unsplash.com/photo-1582778959124-88d5fd4fafa9?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 20,
@@ -131,6 +149,7 @@ export const destinations = [
     label: "Florence",
     image:
       "https://images.unsplash.com/photo-1543832923-44667a44c804?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 21,
@@ -138,6 +157,7 @@ export const destinations = [
     label: "Istanbul",
     image:
       "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 22,
@@ -145,6 +165,7 @@ export const destinations = [
     label: "London",
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 23,
@@ -152,6 +173,7 @@ export const destinations = [
     label: "Rio de Janeiro",
     image:
       "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 24,
@@ -159,13 +181,15 @@ export const destinations = [
     label: "São Paulo",
     image:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 25,
     value: "los-angeles",
     label: "Los Angeles",
     image:
-      "https://images.unsplash.com/photo-1534190760961-74e8c1b5c3da?w=800&q=80",
+      "https://images.unsplash.com/photo-1665412019489-1928d5afa5cc?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 26,
@@ -173,6 +197,7 @@ export const destinations = [
     label: "Singapore",
     image:
       "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 27,
@@ -180,13 +205,15 @@ export const destinations = [
     label: "Hong Kong",
     image:
       "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 28,
     value: "cairo",
     label: "Cairo",
     image:
-      "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=800&q=80",
+      "https://images.unsplash.com/photo-1630201187972-dc4136076c6c?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 29,
@@ -194,13 +221,15 @@ export const destinations = [
     label: "Beijing",
     image:
       "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 30,
     value: "marrakech",
     label: "Marrakech",
     image:
-      "https://images.unsplash.com/photo-1558433916-90a36b44753f?w=800&q=80",
+      "https://images.unsplash.com/photo-1725303259124-9b3b899af81c?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 31,
@@ -208,13 +237,15 @@ export const destinations = [
     label: "Edinburgh",
     image:
       "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 32,
     value: "vienna",
     label: "Vienna",
     image:
-      "https://images.unsplash.com/photo-1516550135131-fe3dcb0bedc7?w=800&q=80",
+      "https://images.unsplash.com/photo-1519923041107-e4dc8d9193da?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 33,
@@ -222,6 +253,7 @@ export const destinations = [
     label: "Seoul",
     image:
       "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 34,
@@ -229,6 +261,7 @@ export const destinations = [
     label: "Mexico City",
     image:
       "https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 35,
@@ -236,6 +269,7 @@ export const destinations = [
     label: "Moscow",
     image:
       "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 36,
@@ -243,6 +277,7 @@ export const destinations = [
     label: "Lisbon",
     image:
       "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 37,
@@ -250,13 +285,15 @@ export const destinations = [
     label: "Budapest",
     image:
       "https://images.unsplash.com/photo-1520986606214-8b456906c813?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 38,
     value: "zurich",
     label: "Zurich",
     image:
-      "https://images.unsplash.com/photo-1574979501473-b851b13f8c0a?w=800&q=80",
+      "https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 39,
@@ -264,6 +301,7 @@ export const destinations = [
     label: "Toronto",
     image:
       "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 40,
@@ -271,6 +309,7 @@ export const destinations = [
     label: "San Francisco",
     image:
       "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 41,
@@ -278,6 +317,7 @@ export const destinations = [
     label: "Athens",
     image:
       "https://images.unsplash.com/photo-1555993539-1732b0258235?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
   {
     id: 42,
@@ -285,5 +325,6 @@ export const destinations = [
     label: "Kruger National Park",
     image:
       "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=80",
+    videoSrc: "https://www.youtube.com/embed/278IRQ6HSi4?si=NsW73Z93gvsmiPC7",
   },
 ];
