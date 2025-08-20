@@ -112,7 +112,7 @@ const Destination = () => {
             backgroundImage: `url(${destination.image})`,
           }}
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/40 rounded-lg" />
         <Button
           variant="ghost"
           className="p-2 absolute top-2 right-2 z-10 hover:bg-transparent"
@@ -158,7 +158,7 @@ const Destination = () => {
       </div>
 
       <div className="relative z-10 py-10 px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <m.div
             initial={{ y: 40, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}

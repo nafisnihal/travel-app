@@ -1,5 +1,6 @@
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Route, Routes } from "react-router";
+import ScrollToTop from "./components/ScrollToTop";
 import { ThemeProvider } from "./components/theme-provider";
 import { AuthProvider } from "./context/AuthContext";
 import "./index.css";
@@ -15,6 +16,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system">
       <BrowserRouter>
+        <ScrollToTop />
         <AuthProvider>
           <Routes>
             <Route element={<Layout />}>
@@ -22,10 +24,10 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/favorites" element={<Favorites />} />
               <Route path="/destination/:slug" element={<Destination />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="*" element={<div>404 Not Found</div>} />
             </Route>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>
           <Toaster position="bottom-right" />
         </AuthProvider>

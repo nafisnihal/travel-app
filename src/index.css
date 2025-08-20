@@ -118,6 +118,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: var(--font-raleway);
     @apply bg-background text-foreground;
