@@ -1,8 +1,8 @@
-#  Travello - Modern Travel Booking Application
+# Travello - Modern Travel Booking Application
 
 A beautiful, modern travel booking application built with React, featuring stunning animations, responsive design, and a seamless user experience for discovering and booking dream destinations.
 
-##  Features
+## Features
 
 - ** Interactive Home Page** - Hero section with search functionality and trending destinations
 - ** Destination Details** - Comprehensive destination pages with booking capabilities
@@ -19,6 +19,7 @@ A beautiful, modern travel booking application built with React, featuring stunn
 ### Prerequisites
 
 Make sure you have the following installed on your system:
+
 - **Node.js** (version 16.0 or higher)
 - **npm** or **yarn** package manager
 - **Git** for version control
@@ -26,12 +27,14 @@ Make sure you have the following installed on your system:
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/nafisnihal/travel-app.git
    cd travel-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -39,6 +42,7 @@ Make sure you have the following installed on your system:
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    # or
@@ -46,12 +50,10 @@ Make sure you have the following installed on your system:
    ```
 
 4. **Open your browser**
-   
+
    Navigate to `http://localhost:5173` to view the application.
 
-
-
-##  Project Structure
+## Project Structure
 
 ```
 src/
@@ -82,33 +84,39 @@ src/
     └── images/         # Image files
 ```
 
-##  Technology Stack
+## Technology Stack
 
 ### Core Technologies
+
 - **React** - Modern React with hooks and concurrent features
 - **React Router** - Client-side routing
 - **Framer Motion** - Smooth animations and transitions
 
 ### UI & Styling
+
 - **Tailwind CSS** - Utility-first CSS framework
 - **Shadcn/ui** - High-quality component library
 - **Lucide React** - Beautiful icon library
 - **CSS Variables** - Dynamic theming system
 
 ### Form Management
+
 - **React Hook Form** - Performant form library
 - **Zod** - TypeScript-first schema validation
 - **@hookform/resolvers** - Form validation integration
 
 ### State Management
+
 - **React Context** - Global state management
 - **Local Storage** - Persistent data storage
 - **React Hot Toast** - Elegant toast notifications
 
-##  Design Approach
+## Design Approach
 
 ### Design Philosophy
+
 The application follows a **modern, minimal design philosophy** with emphasis on:
+
 - Clean typography using Playfair Display and Raleway fonts
 - Consistent spacing and layout patterns
 - Subtle animations that enhance user experience
@@ -116,50 +124,56 @@ The application follows a **modern, minimal design philosophy** with emphasis on
 - Mobile-first responsive design
 
 ### Color Scheme
+
 - **Light Theme**: Clean whites and subtle grays
 - **Dark Theme**: Rich dark backgrounds with proper contrast
 - **Accent Colors**: Minimalistic approach with focus on content
 
 ### Animation Strategy
+
 - **Entrance Animations**: Smooth fade-ins with staggered delays
 - **Micro-interactions**: Hover effects and button animations
 - **Page Transitions**: Smooth scroll-to-top on navigation
 - **Loading States**: Elegant spinners and skeleton screens
 
-##  Key Features Implementation
+## Key Features Implementation
 
 ### Authentication System
+
 - JWT-like simulation with local storage
 - Form validation with real-time feedback
 - Password strength indicators
 - Persistent login state
 
 ### Favorites Management
+
 - Local storage persistence
 - Add/remove destinations
 - Visual feedback with toast notifications
 - Optimistic UI updates
 
 ### Theme System
+
 - Simple dark/light toggle
 - CSS variable-based theming
 - Persistent theme preference
 - Smooth transition animations
 
 ### Responsive Design
+
 - Mobile-first approach
 - Flexible grid layouts
 - Adaptive component sizing
 - Touch-friendly interactions
 
-##  Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-##  Performance Optimizations
+## Performance Optimizations
 
 - **Code Splitting** - Lazy loading for optimal bundle size
 - **Image Optimization** - WebP format with fallbacks
