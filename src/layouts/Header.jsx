@@ -7,6 +7,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { Heart, UserRound } from "lucide-react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router";
@@ -32,12 +37,19 @@ const Header = () => {
         <Link to="/about">About</Link>
       </nav>
       <div className="flex items-center gap-3">
-        <Link
-          to="/favorites"
-          className="flex items-center gap-1 hover:text-red-500 transition-colors"
-        >
-          <Heart className="h-4 w-4" />
-        </Link>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link
+              to="/favorites"
+              className="flex items-center gap-1 hover:text-red-500 transition-colors"
+            >
+              <Heart className="h-4 w-4" />
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Favorite Destinations</p>
+          </TooltipContent>
+        </Tooltip>
         <ThemeToggle />
         {isAuthenticated ? (
           <DropdownMenu>
