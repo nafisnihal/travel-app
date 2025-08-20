@@ -26,7 +26,7 @@ const Home = () => {
         console.error("Error loading saved form data:", error);
       }
     }
-    // delay to ensure everything is properly mounted
+    // delay to ensure everything is mounted
     setTimeout(() => setIsRestoringData(false), 200);
   }, []);
 
