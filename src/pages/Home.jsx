@@ -1,5 +1,6 @@
 import herobg from "@/assets/images/hero-bg.webp";
 import BookingForm from "@/components/home/BookingForm";
+import GlobeSection from "@/components/home/GlobeSection";
 import SearchBox from "@/components/home/SearchBox";
 import { motion as m } from "motion/react";
 import { useEffect, useState } from "react";
@@ -29,7 +30,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center min-h-screen">
       <m.div
         className="w-full flex flex-col items-center justify-center gap-4 text-center py-8 px-4 rounded-lg text-white"
         style={{
@@ -88,6 +89,7 @@ const Home = () => {
           />
         )}
       </m.div>
+      <GlobeSection />
     </div>
   );
 };
