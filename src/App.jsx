@@ -14,7 +14,7 @@ import Register from "./pages/Register.jsx";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="system">
+    <ThemeProvider defaultTheme="dark">
       <BrowserRouter>
         <ScrollToTop />
         <AuthProvider>

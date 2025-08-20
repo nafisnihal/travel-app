@@ -36,14 +36,19 @@ const Header = () => {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
       </nav>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2">
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
               to="/favorites"
-              className="flex items-center gap-1 hover:text-red-500 transition-colors"
+              className="flex items-center hover:text-red-500 transition-colors"
             >
-              <Heart className="h-4 w-4" />
+              <Button
+                variant="ghost"
+                className="p-1 rounded-full hover:text-red-500 transition-colors ease-in-out"
+              >
+                <Heart className="h-4 w-4" />
+              </Button>
             </Link>
           </TooltipTrigger>
           <TooltipContent>
@@ -54,7 +59,7 @@ const Header = () => {
         {isAuthenticated ? (
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Avatar className="cursor-pointer select-none">
+              <Avatar className="cursor-pointer select-none border md:ml-1">
                 <AvatarFallback>
                   {user?.email?.[0]?.toUpperCase() || "U"}
                 </AvatarFallback>
@@ -63,7 +68,7 @@ const Header = () => {
             <DropdownMenuContent align="end" className="w-40">
               <DropdownMenuItem
                 onClick={handleLogout}
-                className="cursor-pointer text-red-600"
+                className="cursor-pointer text-red-500"
               >
                 Logout
               </DropdownMenuItem>

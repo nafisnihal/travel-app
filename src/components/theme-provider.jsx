@@ -2,37 +2,34 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 // Initial context with theme and setter
 const ThemeContext = createContext({
-  theme: "system",
+  theme: "dark",
   setTheme: () => {},
 });
 
 export function ThemeProvider({
   children,
-  defaultTheme = "system",
+  defaultTheme = "dark",
   storageKey = "ui-theme",
 }) {
-  const [theme, setThemeState] = useState(
-    () => localStorage.getItem(storageKey) || defaultTheme
-  );
+  const [theme, setThemeState] = useState(() => {
+    const storedTheme = localStorage.getItem(storageKey);
+    // If no stored theme, default to dark
+    return storedTheme || defaultTheme;
+  });
 
   useEffect(() => {
     const root = document.documentElement;
     root.classList.remove("light", "dark");
 
-    if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
-      root.classList.add(systemTheme);
-    } else {
-      root.classList.add(theme);
-    }
+    // Only support light and dark themes
+    root.classList.add(theme === "light" ? "light" : "dark");
   }, [theme]);
 
   const setTheme = (value) => {
-    localStorage.setItem(storageKey, value);
-    setThemeState(value);
+    // Only allow light or dark themes
+    const newTheme = value === "light" ? "light" : "dark";
+    localStorage.setItem(storageKey, newTheme);
+    setThemeState(newTheme);
   };
 
   return (
