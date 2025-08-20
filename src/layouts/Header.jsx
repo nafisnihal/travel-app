@@ -7,10 +7,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { UserRound } from "lucide-react";
+import { Heart, UserRound } from "lucide-react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router";
 import { useAuth } from "../context/AuthContext";
+
+const FAVORITES_STORAGE_KEY = "travel-app-favorites";
 
 const Header = () => {
   const { isAuthenticated, user, logout } = useAuth();
@@ -23,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-2 flex justify-between items-center max-w-7xl mx-auto w-full">
+    <header className="pt-3 pb-1 px-4 flex justify-between items-center max-w-7xl mx-auto w-full">
       <Link to="/" className="text-2xl font-bold -mt-2">
         <h1>Travello</h1>
       </Link>
@@ -32,6 +34,12 @@ const Header = () => {
         <Link to="/about">About</Link>
       </nav>
       <div className="flex items-center gap-3">
+        <Link
+          to="/favorites"
+          className="flex items-center gap-1 hover:text-red-500 transition-colors"
+        >
+          <Heart className="h-4 w-4" />
+        </Link>
         <ThemeToggle />
         {isAuthenticated ? (
           <DropdownMenu>

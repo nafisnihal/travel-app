@@ -40,7 +40,7 @@ function SearchBox({ selectedDstn, setSelectedDst, submitted }) {
           >
             {selectedDstn ? selectedDstn : "Search Destinations Here"}
             <m.div
-              animate={{ scale: [1, 1.1, 1] }}
+              animate={{ scale: [1, 1.3, 1], rotate: [0, 10, 0] }}
               transition={{
                 duration: 2,
                 repeat: Infinity,
@@ -65,7 +65,7 @@ function SearchBox({ selectedDstn, setSelectedDst, submitted }) {
                 <CommandGroup>
                   {destinations.map((city) => (
                     <CommandItem
-                      key={city.value}
+                      key={city.id}
                       value={city.value}
                       onSelect={() => handleSelect(city.value)}
                     >

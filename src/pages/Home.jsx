@@ -19,7 +19,6 @@ const Home = () => {
         const { selectedDstn: savedDestination } = JSON.parse(savedData);
         if (savedDestination) {
           setSelectedDst(savedDestination);
-          console.log("Restored destination:", savedDestination);
         }
       } catch (error) {
         console.error("Error loading saved form data:", error);

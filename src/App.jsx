@@ -5,6 +5,8 @@ import { AuthProvider } from "./context/AuthContext";
 import "./index.css";
 import Layout from "./layouts/Layout";
 import About from "./pages/About.jsx";
+import Destination from "./pages/Destination.jsx";
+import Favorites from "./pages/Favorites.jsx";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
@@ -18,6 +20,8 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/favorites" element={<Favorites />} />
+              <Route path="/destination/:slug" element={<Destination />} />
             </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

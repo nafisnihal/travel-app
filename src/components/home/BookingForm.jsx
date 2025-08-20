@@ -243,9 +243,9 @@ const BookingForm = memo(({ selectedDstn, submitted, setSubmitted }) => {
             Booking Confirmed for{" "}
             <span className="capitalize"> {selectedDstn}</span>
           </p>
-          <Link to="/">
+          <Link to={`/destination/${selectedDstn}`}>
             <Button className="rounded-xl text-xs bg-white text-black dark:bg-black dark:text-white hover:bg-white dark:hover:bg-black">
-              Explore you destination here
+              Explore your destination here
               <m.div
                 animate={{ x: [0, 3, 0] }}
                 transition={{
