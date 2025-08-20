@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen">
-      <m.div
+      <div
         className="w-full flex flex-col items-center justify-center gap-4 text-center py-8 px-4 rounded-lg text-white"
         style={{
           background: `url(${herobg}) no-repeat center center`,
@@ -51,7 +51,7 @@ const Home = () => {
             className="text-3xl md:text-5xl font-bold"
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
           >
             Discover your travel destination
           </m.h1>
@@ -59,7 +59,7 @@ const Home = () => {
             className=" md:text-lg"
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
           >
             Pack your bags and let your journey begin!
           </m.p>
@@ -67,7 +67,7 @@ const Home = () => {
             className="flex flex-col items-center gap-2 mt-6 bg-black/10 backdrop-blur-md p-4 rounded-lg shadow-md w-full md:w-[600px]"
             initial={{ y: 60, opacity: 0, scale: 0.9 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.5 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
           >
             <SearchBox
               selectedDstn={selectedDstn}
@@ -83,7 +83,7 @@ const Home = () => {
             setSubmitted={setSubmitted}
           />
         )}
-      </m.div>
+      </div>
       <TrendingDestinations />
       <GlobeSection />
     </div>

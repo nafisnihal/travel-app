@@ -389,8 +389,8 @@ export default function GlobeSection() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-10 h-[500px] md:h-auto dark:bg-gradient-to-b from-emerald-950 to-black bg-white relative w-full max-w-6xl mt-5 rounded-lg">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+    <div className="flex flex-row items-center justify-center py-10 h-[500px] md:h-auto dark:bg-gradient-to-b from-emerald-950 to-black bg-white relative w-full mt-5 rounded-lg">
+      <div className="w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
             opacity: 0,

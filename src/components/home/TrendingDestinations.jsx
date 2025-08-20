@@ -3,7 +3,7 @@ import { InfiniteSlider } from "../ui/infiniteSlider";
 
 const TrendingDestinations = () => {
   return (
-    <div className="pt-10 pb-5 max-w-6xl mx-auto w-full">
+    <div className="pt-10 pb-5 w-full overflow-hidden">
       <InfiniteSlider durationOnHover={200} gap={24} duration={150}>
         {destinations.map((destination) => (
           <img
