@@ -4,15 +4,15 @@ A beautiful, modern travel booking application built with React, featuring stunn
 
 ## Features
 
-- ** Interactive Home Page** - Hero section with search functionality and trending destinations
-- ** Destination Details** - Comprehensive destination pages with booking capabilities
-- ** Favorites System** - Save and manage favorite destinations with local storage
-- ** User Authentication** - Secure login/register system with form validation
-- ** Dark/Light Theme** - Elegant theme switching with smooth transitions
-- ** Responsive Design** - Optimized for all device sizes
-- ** Modern UI/UX** - Clean, minimal design with smooth animations
-- ** Newsletter Subscription** - Footer newsletter with validation
-- ** Smart Search** - Real-time destination search with autocomplete
+- **Interactive Home Page** - Hero section with search functionality and trending destinations
+- **Destination Details** - Comprehensive destination pages with booking capabilities
+- **Favorites System** - Save and manage favorite destinations with local storage
+- **User Authentication** - Secure login/register system with form validation
+- **Dark/Light Theme** - Elegant theme switching with smooth transitions
+- **Responsive Design** - Optimized for all device sizes
+- **Modern UI/UX** - Clean, minimal design with smooth animations
+- **Newsletter Subscription** - Footer newsletter with validation
+- **Smart Search** - Real-time destination search with autocomplete
 
 ## Getting Started
 
